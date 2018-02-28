@@ -41,6 +41,8 @@ $ python srgan_meta.py
 ```sh
 $ python srgan_main.py --model=evaluate --valid_lr_img=image_000001.png
 ```
+使った画像は<a href="https://www.youtube.com/watch?v=_NPOD92a78I">YouTubeの動画</a>の一コマを使わせてもらった.
+YouTubeAPIは3gppやmp4の形式でダウンロードでき, 高画質と低画質の教師ありデータが取得しやすいからだ.
 <img src="img/slide_color.png"><br>
 <img src="img/valid_lr_000123.png"><br>
 <img src="img/valid_bicubic_000123.png"><br>
