@@ -42,6 +42,7 @@ $ python srgan_meta.py
 $ python srgan_main.py --model=evaluate --valid_lr_img=image_000001.png
 ```
 <img src="img/slide.png"><br>
+<img src="img/valid_bicbic_000123.png"> <img src="img/valid_gen_000123.png"><br>
 
 ### 画像の連結
 ```sh
