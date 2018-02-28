@@ -2,10 +2,11 @@ import os
 from tqdm import tqdm
 from time import sleep
 
-for i in tqdm(range(1, 6008+1)):
-    #print('python srgan_main2.py --mode=evaluate --valid_lr_img={}'.format(name_file))
-    print('python srgan_main2.py --mode=evaluate --valid_lr_img=image_%06d.png'%i)
-    os.system('python srgan_main2.py --mode=evaluate --valid_lr_img=image_%06d.png'%i)
+path = "data_3gpp/images/"
+for i in tqdm(range(1, len(os.listdir(path)))):
+    #print('python srgan_main.py --mode=evaluate --valid_lr_img={}'.format(name_file))
+    print('python srgan_main.py --mode=evaluate --valid_lr_img=image_%06d.png'%i)
+    os.system('python srgan_main.py --mode=evaluate --valid_lr_img=image_%06d.png'%i)
     
     
     #print('cp ./samples_movie/evaluate/valid_bicbic.png ./samples_movie/evaluate/valid_bicbic/valid_bicbic_{}'.format(name_file))
